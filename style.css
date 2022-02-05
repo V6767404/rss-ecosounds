@@ -11,7 +11,7 @@ html {
 body {
   min-width: 320px;
   /* background-color: seagreen;  */
-  background-color: black;  
+  background-color: black;
   font-family: "Merriweather", sans-serif;
   font-size: 20px;
   line-height: 2;
@@ -81,7 +81,6 @@ body {
 
 .nav-item:hover {
   color: #bdae82;
-  
 }
 
 .nav-item.active {
@@ -98,18 +97,18 @@ body {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 120px);
-  min-height: 280px; 
+  min-height: 280px;
 
   background-image: url("./assets/img/forest.jpg");
   background-size: cover;
-  transition: 0.9s;
+  transition: 0.7s;
 }
 
 /* main background addition */
 .main.drozd {
   background-image: url("./assets/img/drozd.jpg");
   /* background-image: url("https://images.unsplash.com/photo-1484689228555-fd6bc1b28b7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"); */
- }
+}
 .main.javoronok {
   background-image: url("./assets/img/javoronok.jpg");
 }
@@ -167,7 +166,6 @@ body {
 .footer-data {
   display: flex;
   align-items: center;
-
 }
 
 .copyright {
