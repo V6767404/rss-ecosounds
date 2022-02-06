@@ -48,6 +48,7 @@ const changeMenu = (element) => {
       // console.log("drozd");
       audio.src = "./assets/audio/drozd.mp3";
       main.className = "main drozd";
+      element.classList.add("active");
       // main.setAttribute("class", "main drozd");
       //   main.style.backgroundImage = 'url("./assets/img/drozd.jpg")';
       //   main.style.backgroundImage = 'url("./assets/img/' + spec[0] + '.jpg")';
@@ -59,6 +60,7 @@ const changeMenu = (element) => {
       console.log("javoronok");
       audio.src = "./assets/audio/javoronok.mp3";
       main.className = "main javoronok";
+      
       playAudio();
       isPlay = true;
       break;
@@ -91,11 +93,29 @@ const changeMenu = (element) => {
 
 navLinks.forEach((el) =>
   el.addEventListener("click", function () {
+    delActiveClass(); 
+    el.classList.add("active");
     changeMenu(el);
   })
 );
 
-// Кеширование изображений
+function delActiveClass() {
+  navLinks.forEach((el) => 
+    el.classList.remove("active"))
+
+  }
+
+
+
+// function changeImage(event) {
+//   if (event.target.classList.contains("portfolio-btn")) {
+//     // здесь код функции, меняющей src изображений
+//   }
+// }
+
+
+
+  // Кеширование изображений
 function preloadImages() {
   for (let i = 0; i <= 5; i++) {
     const img = new Image();
@@ -104,3 +124,7 @@ function preloadImages() {
   }
 }
 preloadImages();
+
+
+
+

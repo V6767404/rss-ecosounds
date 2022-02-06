@@ -28,6 +28,7 @@
 
 let isPlay = false;
 const button = document.querySelector("button");
+const logo = document.querySelector("logo");
 
 const audio = new Audio();
 
